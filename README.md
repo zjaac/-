@@ -5,145 +5,167 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: _US_美国, server: 152.69.206.209, port: 1212, type: vmess, uuid: fb908160-9697-4bfd-f5b7-f1fbc53e60fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 152.69.206.209}, udp: true}
   - {name: CN_65 |65.70Mb, server: 120.233.186.71, port: 3383, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_103 |22.63Mb, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_533, server: 123.59.87.29, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_536, server: 123.59.87.29, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_66 |25.05Mb, server: 116.129.254.47, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_102 |23.22Mb, server: 116.129.254.47, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_528, server: 116.129.253.130, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_531, server: 116.129.253.130, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_525, server: 103.56.60.185, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
   - {name: CN_534, server: 116.129.253.130, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_95 |23.95Mb, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: CN_238 | 8.14Mb, server: 103.56.62.145, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: CN_235 | 9.60Mb, server: 103.56.62.145, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: CN_525, server: 103.56.60.185, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: _TW_台湾, server: 211.72.35.153, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: CN_523, server: 103.56.60.185, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: _NL_荷兰, server: 213.183.59.206, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: CN_531, server: 116.129.253.130, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港 2, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 77de43cc-9443-31d6-bc3d-6bf60186594d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN_528, server: 116.129.253.130, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: US_747, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
   - {name: CN_522, server: 103.56.60.185, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
   - {name: CN_46 TG@peekfun, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_523, server: 103.56.60.185, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
   - {name: CN_73 TG@peekfun, server: 123.59.87.29, port: 3389, type: trojan, password: 032532644f4fd784, skip-cert-verify: true, udp: true}
   - {name: CN_98 |25.89Mb, server: 116.129.254.47, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
   - {name: CN_532, server: 123.59.87.29, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
   - {name: CN_535, server: 116.129.253.177, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
   - {name: TW_152 TG@peekfun, server: 60.249.3.229, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
-  - {name: CN_95 | 9.00Mb, server: hn.zfnode.org, port: 30217, type: trojan, password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f, sni: hn.zfnode.org, skip-cert-verify: true, udp: true}
-  - {name: CN_86 TG@peekfun, server: hn.zfnode.org, port: 30217, type: trojan, password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f, sni: hn.zfnode.org, skip-cert-verify: true, udp: true}
   - {name: CN_530, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: US_747, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: CN_235 | 9.60Mb, server: 103.56.62.145, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_238 | 8.14Mb, server: 103.56.62.145, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
   - {name: TW_624, server: 211.72.35.153, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
   - {name: TW_622, server: 211.72.35.153, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: CN_95 | 9.00Mb, server: hn.zfnode.org, port: 30217, type: trojan, password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f, sni: hn.zfnode.org, skip-cert-verify: true, udp: true}
   - {name: _435, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, sni: w12.udpgw.com, skip-cert-verify: true, udp: true}
-  - {"type":"ssr","name":"🇳🇱_NL_荷兰_1","server":"213.183.59.214","port":9080,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"VP8ZPxQpJtZRCjfZ"}
-  - {"type":"ssr","name":"🇳🇱_NL_荷兰_2","server":"213.183.59.214","port":9032,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"UWZQeLRWnkqgkseq"}
-  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦","server":"213.183.53.208","port":9059,"cipher":"aes-256-cfb","password":"9XwYyZsK8SNzQDtY"}
-  - {"type":"trojan","name":"🇹🇼_TW_台湾","server":"211.72.35.153","port":3389,"password":"cd39f62aed7b90f6","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡","server":"116.129.254.47","port":3389,"password":"d66013c645b93c5c","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇭🇰_HK_香港_1","server":"azhj001.xiba1.xyz","port":20723,"password":"e20f1565-2d2c-37fb-9d39-93d6861a9746","udp":true,"skip-cert-verify":true,"sni":"ssl.ssl12.xyz"}
-  - {"type":"ss","name":"🇳🇱_NL_荷兰_3","server":"213.183.59.206","port":9053,"cipher":"aes-256-cfb","password":"SBM7R883jBmnqe6C"}
-  - {"type":"trojan","name":"🇭🇰_HK_香港_2","server":"azhj001.xiba1.xyz","port":20726,"password":"77de43cc-9443-31d6-bc3d-6bf60186594d","udp":true,"skip-cert-verify":true,"sni":"azhj001.xiba1.xyz"}
-  - {"type":"trojan","name":"🇨🇦_CA_加拿大","server":"tor.alinkrelay.com","port":12001,"password":"5d32a739-7796-445e-83ac-e1fb2fcdb044","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"🇺🇸_US_美国","server":"152.69.206.209","port":1212,"uuid":"fb908160-9697-4bfd-f5b7-f1fbc53e60fa","alterId":0,"cipher":"auto","network":"ws"}
+  - {name: _RU_俄罗斯联邦, server: 213.183.53.208, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: _NL_荷兰 2, server: 213.183.59.214, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
+  - {name: _NL_荷兰 3, server: 213.183.59.214, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: _CN_中国->🇸🇬_SG_新加坡, server: 116.129.254.47, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: _CA_加拿大, server: tor.alinkrelay.com, port: 12001, type: trojan, password: 5d32a739-7796-445e-83ac-e1fb2fcdb044, sni: tor.alinkrelay.com, skip-cert-verify: true, udp: true}
+  - {name: CN_103 |22.63Mb, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: CN_533, server: 123.59.87.29, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: CN_536, server: 123.59.87.29, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: CN_66 |25.05Mb, server: 116.129.254.47, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: CN_95 |23.95Mb, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - _US_美国
       - CN_65 |65.70Mb
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_102 |23.22Mb
-      - CN_528
-      - CN_531
-      - CN_525
       - CN_534
-      - CN_95 |23.95Mb
+      - CN_238 | 8.14Mb
+      - CN_235 | 9.60Mb
+      - CN_525
+      - _TW_台湾
+      - CN_523
+      - _HK_香港
+      - _NL_荷兰
+      - CN_531
+      - _HK_香港 2
+      - CN_528
+      - US_747
       - CN_522
       - CN_46 TG@peekfun
-      - CN_523
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
       - CN_532
       - CN_535
       - TW_152 TG@peekfun
-      - CN_95 | 9.00Mb
-      - CN_86 TG@peekfun
       - CN_530
-      - US_747
-      - CN_235 | 9.60Mb
-      - CN_238 | 8.14Mb
       - TW_624
       - TW_622
+      - CN_95 | 9.00Mb
       - _435
+      - _RU_俄罗斯联邦
+      - _NL_荷兰 2
+      - _NL_荷兰 3
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CA_加拿大
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_95 |23.95Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - _US_美国
       - CN_65 |65.70Mb
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_102 |23.22Mb
-      - CN_528
-      - CN_531
-      - CN_525
       - CN_534
-      - CN_95 |23.95Mb
+      - CN_238 | 8.14Mb
+      - CN_235 | 9.60Mb
+      - CN_525
+      - _TW_台湾
+      - CN_523
+      - _HK_香港
+      - _NL_荷兰
+      - CN_531
+      - _HK_香港 2
+      - CN_528
+      - US_747
       - CN_522
       - CN_46 TG@peekfun
-      - CN_523
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
       - CN_532
       - CN_535
       - TW_152 TG@peekfun
-      - CN_95 | 9.00Mb
-      - CN_86 TG@peekfun
       - CN_530
-      - US_747
-      - CN_235 | 9.60Mb
-      - CN_238 | 8.14Mb
       - TW_624
       - TW_622
+      - CN_95 | 9.00Mb
       - _435
+      - _RU_俄罗斯联邦
+      - _NL_荷兰 2
+      - _NL_荷兰 3
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CA_加拿大
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_95 |23.95Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - _US_美国
       - CN_65 |65.70Mb
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_102 |23.22Mb
-      - CN_528
-      - CN_531
-      - CN_525
       - CN_534
-      - CN_95 |23.95Mb
+      - CN_238 | 8.14Mb
+      - CN_235 | 9.60Mb
+      - CN_525
+      - _TW_台湾
+      - CN_523
+      - _HK_香港
+      - _NL_荷兰
+      - CN_531
+      - _HK_香港 2
+      - CN_528
+      - US_747
       - CN_522
       - CN_46 TG@peekfun
-      - CN_523
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
       - CN_532
       - CN_535
       - TW_152 TG@peekfun
-      - CN_95 | 9.00Mb
-      - CN_86 TG@peekfun
       - CN_530
-      - US_747
-      - CN_235 | 9.60Mb
-      - CN_238 | 8.14Mb
       - TW_624
       - TW_622
+      - CN_95 | 9.00Mb
       - _435
+      - _RU_俄罗斯联邦
+      - _NL_荷兰 2
+      - _NL_荷兰 3
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CA_加拿大
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_95 |23.95Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -162,139 +184,174 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - _US_美国
       - CN_65 |65.70Mb
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_102 |23.22Mb
-      - CN_528
-      - CN_531
-      - CN_525
       - CN_534
-      - CN_95 |23.95Mb
+      - CN_238 | 8.14Mb
+      - CN_235 | 9.60Mb
+      - CN_525
+      - _TW_台湾
+      - CN_523
+      - _HK_香港
+      - _NL_荷兰
+      - CN_531
+      - _HK_香港 2
+      - CN_528
+      - US_747
       - CN_522
       - CN_46 TG@peekfun
-      - CN_523
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
       - CN_532
       - CN_535
       - TW_152 TG@peekfun
-      - CN_95 | 9.00Mb
-      - CN_86 TG@peekfun
       - CN_530
-      - US_747
-      - CN_235 | 9.60Mb
-      - CN_238 | 8.14Mb
       - TW_624
       - TW_622
+      - CN_95 | 9.00Mb
       - _435
+      - _RU_俄罗斯联邦
+      - _NL_荷兰 2
+      - _NL_荷兰 3
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CA_加拿大
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_95 |23.95Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - _TW_台湾
+      - _HK_香港
+      - _HK_香港 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - _US_美国
       - CN_65 |65.70Mb
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_102 |23.22Mb
-      - CN_528
-      - CN_531
-      - CN_525
       - CN_534
-      - CN_95 |23.95Mb
+      - CN_238 | 8.14Mb
+      - CN_235 | 9.60Mb
+      - CN_525
+      - _TW_台湾
+      - CN_523
+      - _HK_香港
+      - _NL_荷兰
+      - CN_531
+      - _HK_香港 2
+      - CN_528
+      - US_747
       - CN_522
       - CN_46 TG@peekfun
-      - CN_523
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
       - CN_532
       - CN_535
       - TW_152 TG@peekfun
-      - CN_95 | 9.00Mb
-      - CN_86 TG@peekfun
       - CN_530
-      - US_747
-      - CN_235 | 9.60Mb
-      - CN_238 | 8.14Mb
       - TW_624
       - TW_622
+      - CN_95 | 9.00Mb
       - _435
+      - _RU_俄罗斯联邦
+      - _NL_荷兰 2
+      - _NL_荷兰 3
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CA_加拿大
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_95 |23.95Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - _US_美国
       - CN_65 |65.70Mb
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_102 |23.22Mb
-      - CN_528
-      - CN_531
-      - CN_525
       - CN_534
-      - CN_95 |23.95Mb
+      - CN_238 | 8.14Mb
+      - CN_235 | 9.60Mb
+      - CN_525
+      - _TW_台湾
+      - CN_523
+      - _HK_香港
+      - _NL_荷兰
+      - CN_531
+      - _HK_香港 2
+      - CN_528
+      - US_747
       - CN_522
       - CN_46 TG@peekfun
-      - CN_523
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
       - CN_532
       - CN_535
       - TW_152 TG@peekfun
-      - CN_95 | 9.00Mb
-      - CN_86 TG@peekfun
       - CN_530
-      - US_747
-      - CN_235 | 9.60Mb
-      - CN_238 | 8.14Mb
       - TW_624
       - TW_622
+      - CN_95 | 9.00Mb
       - _435
+      - _RU_俄罗斯联邦
+      - _NL_荷兰 2
+      - _NL_荷兰 3
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CA_加拿大
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_95 |23.95Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - _US_美国
       - CN_65 |65.70Mb
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_102 |23.22Mb
-      - CN_528
-      - CN_531
-      - CN_525
       - CN_534
-      - CN_95 |23.95Mb
+      - CN_238 | 8.14Mb
+      - CN_235 | 9.60Mb
+      - CN_525
+      - _TW_台湾
+      - CN_523
+      - _HK_香港
+      - _NL_荷兰
+      - CN_531
+      - _HK_香港 2
+      - CN_528
+      - US_747
       - CN_522
       - CN_46 TG@peekfun
-      - CN_523
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
       - CN_532
       - CN_535
       - TW_152 TG@peekfun
-      - CN_95 | 9.00Mb
-      - CN_86 TG@peekfun
       - CN_530
-      - US_747
-      - CN_235 | 9.60Mb
-      - CN_238 | 8.14Mb
       - TW_624
       - TW_622
+      - CN_95 | 9.00Mb
       - _435
+      - _RU_俄罗斯联邦
+      - _NL_荷兰 2
+      - _NL_荷兰 3
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CA_加拿大
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_95 |23.95Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -310,34 +367,42 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - _US_美国
       - CN_65 |65.70Mb
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_102 |23.22Mb
-      - CN_528
-      - CN_531
-      - CN_525
       - CN_534
-      - CN_95 |23.95Mb
+      - CN_238 | 8.14Mb
+      - CN_235 | 9.60Mb
+      - CN_525
+      - _TW_台湾
+      - CN_523
+      - _HK_香港
+      - _NL_荷兰
+      - CN_531
+      - _HK_香港 2
+      - CN_528
+      - US_747
       - CN_522
       - CN_46 TG@peekfun
-      - CN_523
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
       - CN_532
       - CN_535
       - TW_152 TG@peekfun
-      - CN_95 | 9.00Mb
-      - CN_86 TG@peekfun
       - CN_530
-      - US_747
-      - CN_235 | 9.60Mb
-      - CN_238 | 8.14Mb
       - TW_624
       - TW_622
+      - CN_95 | 9.00Mb
       - _435
+      - _RU_俄罗斯联邦
+      - _NL_荷兰 2
+      - _NL_荷兰 3
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CA_加拿大
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_95 |23.95Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
