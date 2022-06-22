@@ -33,6 +33,16 @@ proxies:
   - {name: TW_624, server: 211.72.35.153, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
   - {name: TW_622, server: 211.72.35.153, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
   - {name: _435, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, sni: w12.udpgw.com, skip-cert-verify: true, udp: true}
+  - {"type":"ssr","name":"🇳🇱_NL_荷兰_1","server":"213.183.59.214","port":9080,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"VP8ZPxQpJtZRCjfZ"}
+  - {"type":"ssr","name":"🇳🇱_NL_荷兰_2","server":"213.183.59.214","port":9032,"protocol":"origin","cipher":"aes-256-cfb","obfs":"plain","password":"UWZQeLRWnkqgkseq"}
+  - {"type":"ss","name":"🇷🇺_RU_俄罗斯联邦","server":"213.183.53.208","port":9059,"cipher":"aes-256-cfb","password":"9XwYyZsK8SNzQDtY"}
+  - {"type":"trojan","name":"🇹🇼_TW_台湾","server":"211.72.35.153","port":3389,"password":"cd39f62aed7b90f6","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡","server":"116.129.254.47","port":3389,"password":"d66013c645b93c5c","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇭🇰_HK_香港_1","server":"azhj001.xiba1.xyz","port":20723,"password":"e20f1565-2d2c-37fb-9d39-93d6861a9746","udp":true,"skip-cert-verify":true,"sni":"ssl.ssl12.xyz"}
+  - {"type":"ss","name":"🇳🇱_NL_荷兰_3","server":"213.183.59.206","port":9053,"cipher":"aes-256-cfb","password":"SBM7R883jBmnqe6C"}
+  - {"type":"trojan","name":"🇭🇰_HK_香港_2","server":"azhj001.xiba1.xyz","port":20726,"password":"77de43cc-9443-31d6-bc3d-6bf60186594d","udp":true,"skip-cert-verify":true,"sni":"azhj001.xiba1.xyz"}
+  - {"type":"trojan","name":"🇨🇦_CA_加拿大","server":"tor.alinkrelay.com","port":12001,"password":"5d32a739-7796-445e-83ac-e1fb2fcdb044","udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","name":"🇺🇸_US_美国","server":"152.69.206.209","port":1212,"uuid":"fb908160-9697-4bfd-f5b7-f1fbc53e60fa","alterId":0,"cipher":"auto","network":"ws"}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
