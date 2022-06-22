@@ -16,17 +16,23 @@ proxies:
   - {name: CN_525, server: 103.56.60.185, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
   - {name: CN_534, server: 116.129.253.130, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
   - {name: CN_95 |23.95Mb, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: TW_624, server: 211.72.35.153, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: US_747, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
   - {name: CN_522, server: 103.56.60.185, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: TW_622, server: 211.72.35.153, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
   - {name: CN_46 TG@peekfun, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
   - {name: CN_523, server: 103.56.60.185, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_530, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
   - {name: CN_73 TG@peekfun, server: 123.59.87.29, port: 3389, type: trojan, password: 032532644f4fd784, skip-cert-verify: true, udp: true}
   - {name: CN_98 |25.89Mb, server: 116.129.254.47, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _435, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, sni: w12.udpgw.com, skip-cert-verify: true, udp: true}
   - {name: CN_532, server: 123.59.87.29, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: CN_535, server: 116.129.253.177, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: TW_152 TG@peekfun, server: 60.249.3.229, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: CN_95 | 9.00Mb, server: hn.zfnode.org, port: 30217, type: trojan, password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f, sni: hn.zfnode.org, skip-cert-verify: true, udp: true}
+  - {name: CN_86 TG@peekfun, server: hn.zfnode.org, port: 30217, type: trojan, password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f, sni: hn.zfnode.org, skip-cert-verify: true, udp: true}
+  - {name: CN_530, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: US_747, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: CN_235 | 9.60Mb, server: 103.56.62.145, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: CN_238 | 8.14Mb, server: 103.56.62.145, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: TW_624, server: 211.72.35.153, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: TW_622, server: 211.72.35.153, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: _435, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, sni: w12.udpgw.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -44,17 +50,23 @@ proxy-groups:
       - CN_525
       - CN_534
       - CN_95 |23.95Mb
-      - TW_624
-      - US_747
       - CN_522
-      - TW_622
       - CN_46 TG@peekfun
       - CN_523
-      - CN_530
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
-      - _435
       - CN_532
+      - CN_535
+      - TW_152 TG@peekfun
+      - CN_95 | 9.00Mb
+      - CN_86 TG@peekfun
+      - CN_530
+      - US_747
+      - CN_235 | 9.60Mb
+      - CN_238 | 8.14Mb
+      - TW_624
+      - TW_622
+      - _435
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -71,17 +83,23 @@ proxy-groups:
       - CN_525
       - CN_534
       - CN_95 |23.95Mb
-      - TW_624
-      - US_747
       - CN_522
-      - TW_622
       - CN_46 TG@peekfun
       - CN_523
-      - CN_530
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
-      - _435
       - CN_532
+      - CN_535
+      - TW_152 TG@peekfun
+      - CN_95 | 9.00Mb
+      - CN_86 TG@peekfun
+      - CN_530
+      - US_747
+      - CN_235 | 9.60Mb
+      - CN_238 | 8.14Mb
+      - TW_624
+      - TW_622
+      - _435
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -99,17 +117,23 @@ proxy-groups:
       - CN_525
       - CN_534
       - CN_95 |23.95Mb
-      - TW_624
-      - US_747
       - CN_522
-      - TW_622
       - CN_46 TG@peekfun
       - CN_523
-      - CN_530
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
-      - _435
       - CN_532
+      - CN_535
+      - TW_152 TG@peekfun
+      - CN_95 | 9.00Mb
+      - CN_86 TG@peekfun
+      - CN_530
+      - US_747
+      - CN_235 | 9.60Mb
+      - CN_238 | 8.14Mb
+      - TW_624
+      - TW_622
+      - _435
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -139,17 +163,23 @@ proxy-groups:
       - CN_525
       - CN_534
       - CN_95 |23.95Mb
-      - TW_624
-      - US_747
       - CN_522
-      - TW_622
       - CN_46 TG@peekfun
       - CN_523
-      - CN_530
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
-      - _435
       - CN_532
+      - CN_535
+      - TW_152 TG@peekfun
+      - CN_95 | 9.00Mb
+      - CN_86 TG@peekfun
+      - CN_530
+      - US_747
+      - CN_235 | 9.60Mb
+      - CN_238 | 8.14Mb
+      - TW_624
+      - TW_622
+      - _435
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -171,17 +201,23 @@ proxy-groups:
       - CN_525
       - CN_534
       - CN_95 |23.95Mb
-      - TW_624
-      - US_747
       - CN_522
-      - TW_622
       - CN_46 TG@peekfun
       - CN_523
-      - CN_530
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
-      - _435
       - CN_532
+      - CN_535
+      - TW_152 TG@peekfun
+      - CN_95 | 9.00Mb
+      - CN_86 TG@peekfun
+      - CN_530
+      - US_747
+      - CN_235 | 9.60Mb
+      - CN_238 | 8.14Mb
+      - TW_624
+      - TW_622
+      - _435
   - name: 📲 电报信息
     type: select
     proxies:
@@ -198,17 +234,23 @@ proxy-groups:
       - CN_525
       - CN_534
       - CN_95 |23.95Mb
-      - TW_624
-      - US_747
       - CN_522
-      - TW_622
       - CN_46 TG@peekfun
       - CN_523
-      - CN_530
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
-      - _435
       - CN_532
+      - CN_535
+      - TW_152 TG@peekfun
+      - CN_95 | 9.00Mb
+      - CN_86 TG@peekfun
+      - CN_530
+      - US_747
+      - CN_235 | 9.60Mb
+      - CN_238 | 8.14Mb
+      - TW_624
+      - TW_622
+      - _435
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -226,17 +268,23 @@ proxy-groups:
       - CN_525
       - CN_534
       - CN_95 |23.95Mb
-      - TW_624
-      - US_747
       - CN_522
-      - TW_622
       - CN_46 TG@peekfun
       - CN_523
-      - CN_530
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
-      - _435
       - CN_532
+      - CN_535
+      - TW_152 TG@peekfun
+      - CN_95 | 9.00Mb
+      - CN_86 TG@peekfun
+      - CN_530
+      - US_747
+      - CN_235 | 9.60Mb
+      - CN_238 | 8.14Mb
+      - TW_624
+      - TW_622
+      - _435
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -263,17 +311,23 @@ proxy-groups:
       - CN_525
       - CN_534
       - CN_95 |23.95Mb
-      - TW_624
-      - US_747
       - CN_522
-      - TW_622
       - CN_46 TG@peekfun
       - CN_523
-      - CN_530
       - CN_73 TG@peekfun
       - CN_98 |25.89Mb
-      - _435
       - CN_532
+      - CN_535
+      - TW_152 TG@peekfun
+      - CN_95 | 9.00Mb
+      - CN_86 TG@peekfun
+      - CN_530
+      - US_747
+      - CN_235 | 9.60Mb
+      - CN_238 | 8.14Mb
+      - TW_624
+      - TW_622
+      - _435
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
