@@ -5,123 +5,111 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_ |11.34Mb, server: 103.56.60.235, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |11.76Mb, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |19.21Mb, server: 103.56.60.235, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |20.17Mb, server: 116.129.253.130, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |21.72Mb, server: 116.129.253.130, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |23.30Mb, server: 103.56.60.235, port: 3381, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |23.40Mb, server: 116.129.253.130, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |29.83Mb, server: 116.129.253.130, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇹🇼TW_253 |36.04Mb, server: 116.129.254.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇸🇬SG_2022 |186.19Mb, server: tj-sg02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-sg02.yiyodns.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_143 |20.23Mb, server: 116.129.253.187, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: CN_144 |45.90Mb, server: 116.129.253.187, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_145 |28.53Mb, server: 116.129.253.187, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_146 | 5.66Mb, server: 116.129.254.29, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_150 |28.85Mb, server: 116.129.254.29, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_151 |34.01Mb, server: 116.129.253.187, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_242 |11.64Mb, server: 116.129.254.29, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_247 |21.26Mb, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_249 |10.62Mb, server: 103.56.62.145, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_252 |11.36Mb, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: CN_253 | 5.49Mb, server: 103.56.62.145, port: 3381, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_254 | 7.12Mb, server: 103.56.62.145, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_259 | 9.91Mb, server: 103.56.60.235, port: 3381, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: SG_439 |38.08Mb, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: US_1630 |26.95Mb, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: CN_65 |65.70Mb, server: 120.233.186.71, port: 3383, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: CN_103 |22.63Mb, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: CN_533, server: 123.59.87.29, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: CN_536, server: 123.59.87.29, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: CN_66 |25.05Mb, server: 116.129.254.47, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: CN_102 |23.22Mb, server: 116.129.254.47, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: CN_528, server: 116.129.253.130, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: CN_531, server: 116.129.253.130, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: CN_525, server: 103.56.60.185, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: CN_534, server: 116.129.253.130, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: CN_95 |23.95Mb, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: TW_624, server: 211.72.35.153, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: US_747, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: CN_522, server: 103.56.60.185, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: TW_622, server: 211.72.35.153, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: CN_46 TG@peekfun, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
+  - {name: CN_523, server: 103.56.60.185, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: CN_530, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: CN_73 TG@peekfun, server: 123.59.87.29, port: 3389, type: trojan, password: 032532644f4fd784, skip-cert-verify: true, udp: true}
+  - {name: CN_98 |25.89Mb, server: 116.129.254.47, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: _435, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, sni: w12.udpgw.com, skip-cert-verify: true, udp: true}
+  - {name: CN_532, server: 123.59.87.29, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_ |11.34Mb
-      - Relay_ |11.76Mb
-      - Relay_ |19.21Mb
-      - Relay_ |20.17Mb
-      - Relay_ |21.72Mb
-      - Relay_ |23.30Mb
-      - Relay_ |23.40Mb
-      - Relay_ |29.83Mb
-      - Relay_-🇹🇼TW_253 |36.04Mb
-      - Relay_🇺🇸US-🇸🇬SG_2022 |186.19Mb
-      - CN_143 |20.23Mb
-      - CN_144 |45.90Mb
-      - CN_145 |28.53Mb
-      - CN_146 | 5.66Mb
-      - CN_150 |28.85Mb
-      - CN_151 |34.01Mb
-      - CN_242 |11.64Mb
-      - CN_247 |21.26Mb
-      - CN_249 |10.62Mb
-      - CN_252 |11.36Mb
-      - CN_253 | 5.49Mb
-      - CN_254 | 7.12Mb
-      - CN_259 | 9.91Mb
-      - SG_439 |38.08Mb
-      - US_1630 |26.95Mb
+      - CN_65 |65.70Mb
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_102 |23.22Mb
+      - CN_528
+      - CN_531
+      - CN_525
+      - CN_534
+      - CN_95 |23.95Mb
+      - TW_624
+      - US_747
+      - CN_522
+      - TW_622
+      - CN_46 TG@peekfun
+      - CN_523
+      - CN_530
+      - CN_73 TG@peekfun
+      - CN_98 |25.89Mb
+      - _435
+      - CN_532
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_ |11.34Mb
-      - Relay_ |11.76Mb
-      - Relay_ |19.21Mb
-      - Relay_ |20.17Mb
-      - Relay_ |21.72Mb
-      - Relay_ |23.30Mb
-      - Relay_ |23.40Mb
-      - Relay_ |29.83Mb
-      - Relay_-🇹🇼TW_253 |36.04Mb
-      - Relay_🇺🇸US-🇸🇬SG_2022 |186.19Mb
-      - CN_143 |20.23Mb
-      - CN_144 |45.90Mb
-      - CN_145 |28.53Mb
-      - CN_146 | 5.66Mb
-      - CN_150 |28.85Mb
-      - CN_151 |34.01Mb
-      - CN_242 |11.64Mb
-      - CN_247 |21.26Mb
-      - CN_249 |10.62Mb
-      - CN_252 |11.36Mb
-      - CN_253 | 5.49Mb
-      - CN_254 | 7.12Mb
-      - CN_259 | 9.91Mb
-      - SG_439 |38.08Mb
-      - US_1630 |26.95Mb
+      - CN_65 |65.70Mb
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_102 |23.22Mb
+      - CN_528
+      - CN_531
+      - CN_525
+      - CN_534
+      - CN_95 |23.95Mb
+      - TW_624
+      - US_747
+      - CN_522
+      - TW_622
+      - CN_46 TG@peekfun
+      - CN_523
+      - CN_530
+      - CN_73 TG@peekfun
+      - CN_98 |25.89Mb
+      - _435
+      - CN_532
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_ |11.34Mb
-      - Relay_ |11.76Mb
-      - Relay_ |19.21Mb
-      - Relay_ |20.17Mb
-      - Relay_ |21.72Mb
-      - Relay_ |23.30Mb
-      - Relay_ |23.40Mb
-      - Relay_ |29.83Mb
-      - Relay_-🇹🇼TW_253 |36.04Mb
-      - Relay_🇺🇸US-🇸🇬SG_2022 |186.19Mb
-      - CN_143 |20.23Mb
-      - CN_144 |45.90Mb
-      - CN_145 |28.53Mb
-      - CN_146 | 5.66Mb
-      - CN_150 |28.85Mb
-      - CN_151 |34.01Mb
-      - CN_242 |11.64Mb
-      - CN_247 |21.26Mb
-      - CN_249 |10.62Mb
-      - CN_252 |11.36Mb
-      - CN_253 | 5.49Mb
-      - CN_254 | 7.12Mb
-      - CN_259 | 9.91Mb
-      - SG_439 |38.08Mb
-      - US_1630 |26.95Mb
+      - CN_65 |65.70Mb
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_102 |23.22Mb
+      - CN_528
+      - CN_531
+      - CN_525
+      - CN_534
+      - CN_95 |23.95Mb
+      - TW_624
+      - US_747
+      - CN_522
+      - TW_622
+      - CN_46 TG@peekfun
+      - CN_523
+      - CN_530
+      - CN_73 TG@peekfun
+      - CN_98 |25.89Mb
+      - _435
+      - CN_532
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -140,31 +128,28 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_ |11.34Mb
-      - Relay_ |11.76Mb
-      - Relay_ |19.21Mb
-      - Relay_ |20.17Mb
-      - Relay_ |21.72Mb
-      - Relay_ |23.30Mb
-      - Relay_ |23.40Mb
-      - Relay_ |29.83Mb
-      - Relay_-🇹🇼TW_253 |36.04Mb
-      - Relay_🇺🇸US-🇸🇬SG_2022 |186.19Mb
-      - CN_143 |20.23Mb
-      - CN_144 |45.90Mb
-      - CN_145 |28.53Mb
-      - CN_146 | 5.66Mb
-      - CN_150 |28.85Mb
-      - CN_151 |34.01Mb
-      - CN_242 |11.64Mb
-      - CN_247 |21.26Mb
-      - CN_249 |10.62Mb
-      - CN_252 |11.36Mb
-      - CN_253 | 5.49Mb
-      - CN_254 | 7.12Mb
-      - CN_259 | 9.91Mb
-      - SG_439 |38.08Mb
-      - US_1630 |26.95Mb
+      - CN_65 |65.70Mb
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_102 |23.22Mb
+      - CN_528
+      - CN_531
+      - CN_525
+      - CN_534
+      - CN_95 |23.95Mb
+      - TW_624
+      - US_747
+      - CN_522
+      - TW_622
+      - CN_46 TG@peekfun
+      - CN_523
+      - CN_530
+      - CN_73 TG@peekfun
+      - CN_98 |25.89Mb
+      - _435
+      - CN_532
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -175,92 +160,83 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_ |11.34Mb
-      - Relay_ |11.76Mb
-      - Relay_ |19.21Mb
-      - Relay_ |20.17Mb
-      - Relay_ |21.72Mb
-      - Relay_ |23.30Mb
-      - Relay_ |23.40Mb
-      - Relay_ |29.83Mb
-      - Relay_-🇹🇼TW_253 |36.04Mb
-      - Relay_🇺🇸US-🇸🇬SG_2022 |186.19Mb
-      - CN_143 |20.23Mb
-      - CN_144 |45.90Mb
-      - CN_145 |28.53Mb
-      - CN_146 | 5.66Mb
-      - CN_150 |28.85Mb
-      - CN_151 |34.01Mb
-      - CN_242 |11.64Mb
-      - CN_247 |21.26Mb
-      - CN_249 |10.62Mb
-      - CN_252 |11.36Mb
-      - CN_253 | 5.49Mb
-      - CN_254 | 7.12Mb
-      - CN_259 | 9.91Mb
-      - SG_439 |38.08Mb
-      - US_1630 |26.95Mb
+      - CN_65 |65.70Mb
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_102 |23.22Mb
+      - CN_528
+      - CN_531
+      - CN_525
+      - CN_534
+      - CN_95 |23.95Mb
+      - TW_624
+      - US_747
+      - CN_522
+      - TW_622
+      - CN_46 TG@peekfun
+      - CN_523
+      - CN_530
+      - CN_73 TG@peekfun
+      - CN_98 |25.89Mb
+      - _435
+      - CN_532
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_ |11.34Mb
-      - Relay_ |11.76Mb
-      - Relay_ |19.21Mb
-      - Relay_ |20.17Mb
-      - Relay_ |21.72Mb
-      - Relay_ |23.30Mb
-      - Relay_ |23.40Mb
-      - Relay_ |29.83Mb
-      - Relay_-🇹🇼TW_253 |36.04Mb
-      - Relay_🇺🇸US-🇸🇬SG_2022 |186.19Mb
-      - CN_143 |20.23Mb
-      - CN_144 |45.90Mb
-      - CN_145 |28.53Mb
-      - CN_146 | 5.66Mb
-      - CN_150 |28.85Mb
-      - CN_151 |34.01Mb
-      - CN_242 |11.64Mb
-      - CN_247 |21.26Mb
-      - CN_249 |10.62Mb
-      - CN_252 |11.36Mb
-      - CN_253 | 5.49Mb
-      - CN_254 | 7.12Mb
-      - CN_259 | 9.91Mb
-      - SG_439 |38.08Mb
-      - US_1630 |26.95Mb
+      - CN_65 |65.70Mb
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_102 |23.22Mb
+      - CN_528
+      - CN_531
+      - CN_525
+      - CN_534
+      - CN_95 |23.95Mb
+      - TW_624
+      - US_747
+      - CN_522
+      - TW_622
+      - CN_46 TG@peekfun
+      - CN_523
+      - CN_530
+      - CN_73 TG@peekfun
+      - CN_98 |25.89Mb
+      - _435
+      - CN_532
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_ |11.34Mb
-      - Relay_ |11.76Mb
-      - Relay_ |19.21Mb
-      - Relay_ |20.17Mb
-      - Relay_ |21.72Mb
-      - Relay_ |23.30Mb
-      - Relay_ |23.40Mb
-      - Relay_ |29.83Mb
-      - Relay_-🇹🇼TW_253 |36.04Mb
-      - Relay_🇺🇸US-🇸🇬SG_2022 |186.19Mb
-      - CN_143 |20.23Mb
-      - CN_144 |45.90Mb
-      - CN_145 |28.53Mb
-      - CN_146 | 5.66Mb
-      - CN_150 |28.85Mb
-      - CN_151 |34.01Mb
-      - CN_242 |11.64Mb
-      - CN_247 |21.26Mb
-      - CN_249 |10.62Mb
-      - CN_252 |11.36Mb
-      - CN_253 | 5.49Mb
-      - CN_254 | 7.12Mb
-      - CN_259 | 9.91Mb
-      - SG_439 |38.08Mb
-      - US_1630 |26.95Mb
+      - CN_65 |65.70Mb
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_102 |23.22Mb
+      - CN_528
+      - CN_531
+      - CN_525
+      - CN_534
+      - CN_95 |23.95Mb
+      - TW_624
+      - US_747
+      - CN_522
+      - TW_622
+      - CN_46 TG@peekfun
+      - CN_523
+      - CN_530
+      - CN_73 TG@peekfun
+      - CN_98 |25.89Mb
+      - _435
+      - CN_532
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -276,31 +252,28 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_ |11.34Mb
-      - Relay_ |11.76Mb
-      - Relay_ |19.21Mb
-      - Relay_ |20.17Mb
-      - Relay_ |21.72Mb
-      - Relay_ |23.30Mb
-      - Relay_ |23.40Mb
-      - Relay_ |29.83Mb
-      - Relay_-🇹🇼TW_253 |36.04Mb
-      - Relay_🇺🇸US-🇸🇬SG_2022 |186.19Mb
-      - CN_143 |20.23Mb
-      - CN_144 |45.90Mb
-      - CN_145 |28.53Mb
-      - CN_146 | 5.66Mb
-      - CN_150 |28.85Mb
-      - CN_151 |34.01Mb
-      - CN_242 |11.64Mb
-      - CN_247 |21.26Mb
-      - CN_249 |10.62Mb
-      - CN_252 |11.36Mb
-      - CN_253 | 5.49Mb
-      - CN_254 | 7.12Mb
-      - CN_259 | 9.91Mb
-      - SG_439 |38.08Mb
-      - US_1630 |26.95Mb
+      - CN_65 |65.70Mb
+      - CN_103 |22.63Mb
+      - CN_533
+      - CN_536
+      - CN_66 |25.05Mb
+      - CN_102 |23.22Mb
+      - CN_528
+      - CN_531
+      - CN_525
+      - CN_534
+      - CN_95 |23.95Mb
+      - TW_624
+      - US_747
+      - CN_522
+      - TW_622
+      - CN_46 TG@peekfun
+      - CN_523
+      - CN_530
+      - CN_73 TG@peekfun
+      - CN_98 |25.89Mb
+      - _435
+      - CN_532
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
