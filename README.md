@@ -5,167 +5,535 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _US_美国, server: 152.69.206.209, port: 1212, type: vmess, uuid: fb908160-9697-4bfd-f5b7-f1fbc53e60fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 152.69.206.209}, udp: true}
-  - {name: CN_65 |65.70Mb, server: 120.233.186.71, port: 3383, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_534, server: 116.129.253.130, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_238 | 8.14Mb, server: 103.56.62.145, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_235 | 9.60Mb, server: 103.56.62.145, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_525, server: 103.56.60.185, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _TW_台湾, server: 211.72.35.153, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: CN_523, server: 103.56.60.185, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: _NL_荷兰, server: 213.183.59.206, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: CN_531, server: 116.129.253.130, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: Pool_ |39.91Mb, server: 85.208.108.59, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Pool_ |44.98Mb, server: 85.208.108.59, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Pool_ |43.65Mb, server: 85.208.108.59, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: Pool_ |28.02Mb, server: 85.208.108.59, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Pool_ |40.12Mb, server: 85.208.108.59, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: NL_579 |27.57Mb, server: 85.208.108.20, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: "|44.30Mb", server: 85.208.108.18, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: Pool_ |38.14Mb, server: 85.208.108.20, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: Pool_ |27.06Mb, server: 85.208.108.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |39.10Mb, server: 85.208.108.20, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |40.82Mb, server: 85.208.108.60, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: Pool_ |39.71Mb, server: 85.208.108.20, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: "|39.74Mb", server: 85.208.108.18, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Pool_ |29.94Mb, server: 85.208.108.60, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |21.70Mb, server: 85.208.108.59, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |42.02Mb, server: 85.208.108.59, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Pool_ |43.58Mb, server: 85.208.108.20, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: "|44.22Mb", server: 85.208.108.18, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: Pool_ |34.69Mb, server: 85.208.108.21, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |46.48Mb, server: 85.208.108.60, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Pool_ |40.22Mb, server: 85.208.108.20, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Pool_ |38.35Mb, server: 85.208.108.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Pool_ |41.54Mb, server: 85.208.108.21, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |43.83Mb, server: 85.208.108.21, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "|17.69Mb", server: 85.208.108.18, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Pool_ |37.41Mb, server: 85.208.108.59, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Pool_ |41.50Mb, server: 85.208.108.59, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |41.40Mb, server: 85.208.108.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "|41.17Mb", server: 85.208.108.18, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: "|42.38Mb", server: 85.208.108.18, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: Pool_ |24.08Mb, server: 85.208.108.21, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: Pool_ |31.94Mb, server: 85.208.108.59, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Pool_ |39.50Mb, server: 85.208.108.20, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |41.84Mb, server: 85.208.108.60, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |43.18Mb, server: 85.208.108.59, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: Pool_ |34.44Mb, server: 85.208.108.21, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: Pool_ |33.37Mb, server: 85.208.108.21, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Pool_ |77.90Mb, server: 85.208.108.21, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "|40.88Mb", server: 85.208.108.18, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: Pool_ |39.84Mb, server: 85.208.108.60, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Pool_ |44.19Mb, server: 85.208.108.60, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: RO_646 |17.99Mb, server: 185.126.116.119, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: US_1131 |57.80Mb, server: 38.68.135.18, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: Pool_ |24.30Mb, server: 85.208.108.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Pool_ |22.01Mb, server: 85.208.108.20, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Pool_ |49.23Mb, server: 85.208.108.20, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |14.82Mb, server: 85.208.108.59, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |45.74Mb, server: 85.208.108.20, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Pool_ |43.93Mb, server: 85.208.108.21, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: Pool_ |43.20Mb, server: 85.208.108.20, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: Pool_ |43.57Mb, server: 85.208.108.59, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: NL_580 |27.83Mb, server: 85.208.108.20, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Pool_ |43.41Mb, server: 85.208.108.59, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: Pool_ |43.20Mb 2, server: 85.208.108.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |25.84Mb, server: 85.208.108.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Pool_ |36.33Mb, server: 85.208.108.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "|43.15Mb", server: 85.208.108.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Pool_ |42.93Mb, server: 85.208.108.21, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: "|15.77Mb", server: 167.88.61.50, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: "|20.49Mb", server: 85.208.108.18, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Pool_ |28.64Mb, server: 85.208.108.20, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Pool_ |38.35Mb 2, server: 85.208.108.20, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Pool_ |36.67Mb, server: 85.208.108.59, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |43.94Mb, server: 85.208.108.59, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Pool_ |38.64Mb, server: 85.208.108.60, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_1195 |40.34Mb, server: 38.75.136.102, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: Pool_ |26.79Mb, server: 85.208.108.59, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: NL_581 |27.21Mb, server: 85.208.108.20, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Pool_ |35.17Mb, server: 85.208.108.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: Pool_ |40.17Mb, server: 85.208.108.59, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Pool_ |45.48Mb, server: 85.208.108.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: "|34.27Mb", server: 85.208.108.18, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Pool_ |27.75Mb, server: 85.208.108.60, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |40.28Mb, server: 85.208.108.21, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "|37.64Mb", server: 85.208.108.18, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: "|15.53Mb", server: 167.88.61.50, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: Pool_ |30.51Mb, server: 85.208.108.20, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Pool_ |37.64Mb, server: 85.208.108.21, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: Pool_ |26.63Mb, server: 85.208.108.21, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |44.59Mb, server: 85.208.108.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Pool_ |38.41Mb, server: 85.208.108.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Pool_ |25.43Mb, server: 85.208.108.59, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Pool_ |38.79Mb, server: 85.208.108.59, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: NL_587 |27.93Mb, server: 85.208.108.20, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: Pool_ |41.82Mb, server: 85.208.108.21, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: NL_577 |24.20Mb, server: 85.208.108.18, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: LT_449 |39.32Mb, server: 213.183.53.182, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: Pool_ |36.90Mb, server: 85.208.108.59, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Pool_ |49.32Mb, server: 85.208.108.59, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Pool_ |37.95Mb, server: 85.208.108.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Pool_ |28.30Mb, server: 85.208.108.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Pool_ |38.95Mb, server: 85.208.108.59, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "|42.64Mb", server: 85.208.108.18, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Pool_ |35.98Mb, server: 85.208.108.20, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: NL_601 | 7.91Mb, server: 213.183.59.185, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: Pool_ |38.38Mb, server: 85.208.108.20, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Pool_ |44.34Mb, server: 85.208.108.59, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: Pool_ |38.89Mb, server: 85.208.108.21, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: "|21.21Mb", server: 85.208.108.18, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |24.42Mb, server: 85.208.108.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |41.65Mb, server: 85.208.108.20, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CN_90 |80.25Mb, server: 14.29.124.174, port: 11049, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: US_1336 |59.07Mb, server: 38.121.43.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: Pool_ |44.02Mb, server: 85.208.108.21, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: Pool_ |45.04Mb, server: 85.208.108.20, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |45.81Mb, server: 85.208.108.60, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Pool_ |22.40Mb, server: 85.208.108.20, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: CN_72 | 3.86Mb, server: 14.29.124.174, port: 11050, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Pool_ |45.47Mb, server: 85.208.108.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Pool_ |41.48Mb, server: 85.208.108.59, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: "|42.38Mb 2", server: 85.208.108.18, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: "|37.57Mb", server: 85.208.108.18, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: RO_635 |19.52Mb, server: 185.126.116.119, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: _25 |28.31Mb, server: 217.30.10.63, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: Pool_ |49.30Mb, server: 85.208.108.59, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_ |43.56Mb, server: 85.208.108.59, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: Pool_ |26.89Mb, server: 85.208.108.21, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: NL_586 |22.11Mb, server: 213.183.51.172, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: US_854 |15.63Mb, server: rooms.starspace.link, port: 443, type: trojan, password: 5HfENR8nt2PR8reH, sni: rooms.starspace.link, skip-cert-verify: true, udp: true}
+  - {name: US_1484 | 5.66Mb, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: CA_36 | 5.28Mb, server: 67us01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, sni: 67us01.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK_76 TG@peekfun, server: 210.0.158.220, port: 28443, type: trojan, password: 96673fe8-2a45-4cca-bb6b-108b88aa4a4e, skip-cert-verify: true, udp: true}
   - {name: _HK_香港 2, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 77de43cc-9443-31d6-bc3d-6bf60186594d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_528, server: 116.129.253.130, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
   - {name: US_747, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: CN_522, server: 103.56.60.185, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_46 TG@peekfun, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_73 TG@peekfun, server: 123.59.87.29, port: 3389, type: trojan, password: 032532644f4fd784, skip-cert-verify: true, udp: true}
-  - {name: CN_98 |25.89Mb, server: 116.129.254.47, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_532, server: 123.59.87.29, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_535, server: 116.129.253.177, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: TW_152 TG@peekfun, server: 60.249.3.229, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
   - {name: CN_530, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: TW_624, server: 211.72.35.153, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: TW_622, server: 211.72.35.153, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
   - {name: CN_95 | 9.00Mb, server: hn.zfnode.org, port: 30217, type: trojan, password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f, sni: hn.zfnode.org, skip-cert-verify: true, udp: true}
-  - {name: _435, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, sni: w12.udpgw.com, skip-cert-verify: true, udp: true}
   - {name: _RU_俄罗斯联邦, server: 213.183.53.208, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
   - {name: _NL_荷兰 2, server: 213.183.59.214, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: _NL_荷兰 3, server: 213.183.59.214, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: _CN_中国->🇸🇬_SG_新加坡, server: 116.129.254.47, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _CA_加拿大, server: tor.alinkrelay.com, port: 12001, type: trojan, password: 5d32a739-7796-445e-83ac-e1fb2fcdb044, sni: tor.alinkrelay.com, skip-cert-verify: true, udp: true}
-  - {name: CN_103 |22.63Mb, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_533, server: 123.59.87.29, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_536, server: 123.59.87.29, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_66 |25.05Mb, server: 116.129.254.47, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_95 |23.95Mb, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
-      - CN_65 |65.70Mb
-      - CN_534
-      - CN_238 | 8.14Mb
-      - CN_235 | 9.60Mb
-      - CN_525
-      - _TW_台湾
-      - CN_523
-      - _HK_香港
-      - _NL_荷兰
-      - CN_531
+      - Pool_ |39.91Mb
+      - Pool_ |44.98Mb
+      - Pool_ |43.65Mb
+      - Pool_ |28.02Mb
+      - Pool_ |40.12Mb
+      - NL_579 |27.57Mb
+      - "|44.30Mb"
+      - Pool_ |38.14Mb
+      - Pool_ |27.06Mb
+      - Pool_ |39.10Mb
+      - Pool_ |40.82Mb
+      - Pool_ |39.71Mb
+      - "|39.74Mb"
+      - Pool_ |29.94Mb
+      - Pool_ |21.70Mb
+      - Pool_ |42.02Mb
+      - Pool_ |43.58Mb
+      - "|44.22Mb"
+      - Pool_ |34.69Mb
+      - Pool_ |46.48Mb
+      - Pool_ |40.22Mb
+      - Pool_ |38.35Mb
+      - Pool_ |41.54Mb
+      - Pool_ |43.83Mb
+      - "|17.69Mb"
+      - Pool_ |37.41Mb
+      - Pool_ |41.50Mb
+      - Pool_ |41.40Mb
+      - "|41.17Mb"
+      - "|42.38Mb"
+      - Pool_ |24.08Mb
+      - Pool_ |31.94Mb
+      - Pool_ |39.50Mb
+      - Pool_ |41.84Mb
+      - Pool_ |43.18Mb
+      - Pool_ |34.44Mb
+      - Pool_ |33.37Mb
+      - Pool_ |77.90Mb
+      - "|40.88Mb"
+      - Pool_ |39.84Mb
+      - Pool_ |44.19Mb
+      - RO_646 |17.99Mb
+      - US_1131 |57.80Mb
+      - Pool_ |24.30Mb
+      - Pool_ |22.01Mb
+      - Pool_ |49.23Mb
+      - Pool_ |14.82Mb
+      - Pool_ |45.74Mb
+      - Pool_ |43.93Mb
+      - Pool_ |43.20Mb
+      - Pool_ |43.57Mb
+      - NL_580 |27.83Mb
+      - Pool_ |43.41Mb
+      - Pool_ |43.20Mb 2
+      - Pool_ |25.84Mb
+      - Pool_ |36.33Mb
+      - "|43.15Mb"
+      - Pool_ |42.93Mb
+      - "|15.77Mb"
+      - "|20.49Mb"
+      - Pool_ |28.64Mb
+      - Pool_ |38.35Mb 2
+      - Pool_ |36.67Mb
+      - Pool_ |43.94Mb
+      - Pool_ |38.64Mb
+      - US_1195 |40.34Mb
+      - Pool_ |26.79Mb
+      - NL_581 |27.21Mb
+      - Pool_ |35.17Mb
+      - Pool_ |40.17Mb
+      - Pool_ |45.48Mb
+      - "|34.27Mb"
+      - Pool_ |27.75Mb
+      - Pool_ |40.28Mb
+      - "|37.64Mb"
+      - "|15.53Mb"
+      - Pool_ |30.51Mb
+      - Pool_ |37.64Mb
+      - Pool_ |26.63Mb
+      - Pool_ |44.59Mb
+      - Pool_ |38.41Mb
+      - Pool_ |25.43Mb
+      - Pool_ |38.79Mb
+      - NL_587 |27.93Mb
+      - Pool_ |41.82Mb
+      - NL_577 |24.20Mb
+      - LT_449 |39.32Mb
+      - Pool_ |36.90Mb
+      - Pool_ |49.32Mb
+      - Pool_ |37.95Mb
+      - Pool_ |28.30Mb
+      - Pool_ |38.95Mb
+      - "|42.64Mb"
+      - Pool_ |35.98Mb
+      - NL_601 | 7.91Mb
+      - Pool_ |38.38Mb
+      - Pool_ |44.34Mb
+      - Pool_ |38.89Mb
+      - "|21.21Mb"
+      - Pool_ |24.42Mb
+      - Pool_ |41.65Mb
+      - CN_90 |80.25Mb
+      - US_1336 |59.07Mb
+      - Pool_ |44.02Mb
+      - Pool_ |45.04Mb
+      - Pool_ |45.81Mb
+      - Pool_ |22.40Mb
+      - CN_72 | 3.86Mb
+      - Pool_ |45.47Mb
+      - Pool_ |41.48Mb
+      - "|42.38Mb 2"
+      - "|37.57Mb"
+      - RO_635 |19.52Mb
+      - _25 |28.31Mb
+      - Pool_ |49.30Mb
+      - Pool_ |43.56Mb
+      - Pool_ |26.89Mb
+      - NL_586 |22.11Mb
+      - US_854 |15.63Mb
+      - US_1484 | 5.66Mb
+      - CA_36 | 5.28Mb
+      - HK_76 TG@peekfun
       - _HK_香港 2
-      - CN_528
       - US_747
-      - CN_522
-      - CN_46 TG@peekfun
-      - CN_73 TG@peekfun
-      - CN_98 |25.89Mb
-      - CN_532
-      - CN_535
-      - TW_152 TG@peekfun
       - CN_530
-      - TW_624
-      - TW_622
       - CN_95 | 9.00Mb
-      - _435
       - _RU_俄罗斯联邦
       - _NL_荷兰 2
-      - _NL_荷兰 3
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CA_加拿大
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_95 |23.95Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _US_美国
-      - CN_65 |65.70Mb
-      - CN_534
-      - CN_238 | 8.14Mb
-      - CN_235 | 9.60Mb
-      - CN_525
-      - _TW_台湾
-      - CN_523
-      - _HK_香港
-      - _NL_荷兰
-      - CN_531
+      - Pool_ |39.91Mb
+      - Pool_ |44.98Mb
+      - Pool_ |43.65Mb
+      - Pool_ |28.02Mb
+      - Pool_ |40.12Mb
+      - NL_579 |27.57Mb
+      - "|44.30Mb"
+      - Pool_ |38.14Mb
+      - Pool_ |27.06Mb
+      - Pool_ |39.10Mb
+      - Pool_ |40.82Mb
+      - Pool_ |39.71Mb
+      - "|39.74Mb"
+      - Pool_ |29.94Mb
+      - Pool_ |21.70Mb
+      - Pool_ |42.02Mb
+      - Pool_ |43.58Mb
+      - "|44.22Mb"
+      - Pool_ |34.69Mb
+      - Pool_ |46.48Mb
+      - Pool_ |40.22Mb
+      - Pool_ |38.35Mb
+      - Pool_ |41.54Mb
+      - Pool_ |43.83Mb
+      - "|17.69Mb"
+      - Pool_ |37.41Mb
+      - Pool_ |41.50Mb
+      - Pool_ |41.40Mb
+      - "|41.17Mb"
+      - "|42.38Mb"
+      - Pool_ |24.08Mb
+      - Pool_ |31.94Mb
+      - Pool_ |39.50Mb
+      - Pool_ |41.84Mb
+      - Pool_ |43.18Mb
+      - Pool_ |34.44Mb
+      - Pool_ |33.37Mb
+      - Pool_ |77.90Mb
+      - "|40.88Mb"
+      - Pool_ |39.84Mb
+      - Pool_ |44.19Mb
+      - RO_646 |17.99Mb
+      - US_1131 |57.80Mb
+      - Pool_ |24.30Mb
+      - Pool_ |22.01Mb
+      - Pool_ |49.23Mb
+      - Pool_ |14.82Mb
+      - Pool_ |45.74Mb
+      - Pool_ |43.93Mb
+      - Pool_ |43.20Mb
+      - Pool_ |43.57Mb
+      - NL_580 |27.83Mb
+      - Pool_ |43.41Mb
+      - Pool_ |43.20Mb 2
+      - Pool_ |25.84Mb
+      - Pool_ |36.33Mb
+      - "|43.15Mb"
+      - Pool_ |42.93Mb
+      - "|15.77Mb"
+      - "|20.49Mb"
+      - Pool_ |28.64Mb
+      - Pool_ |38.35Mb 2
+      - Pool_ |36.67Mb
+      - Pool_ |43.94Mb
+      - Pool_ |38.64Mb
+      - US_1195 |40.34Mb
+      - Pool_ |26.79Mb
+      - NL_581 |27.21Mb
+      - Pool_ |35.17Mb
+      - Pool_ |40.17Mb
+      - Pool_ |45.48Mb
+      - "|34.27Mb"
+      - Pool_ |27.75Mb
+      - Pool_ |40.28Mb
+      - "|37.64Mb"
+      - "|15.53Mb"
+      - Pool_ |30.51Mb
+      - Pool_ |37.64Mb
+      - Pool_ |26.63Mb
+      - Pool_ |44.59Mb
+      - Pool_ |38.41Mb
+      - Pool_ |25.43Mb
+      - Pool_ |38.79Mb
+      - NL_587 |27.93Mb
+      - Pool_ |41.82Mb
+      - NL_577 |24.20Mb
+      - LT_449 |39.32Mb
+      - Pool_ |36.90Mb
+      - Pool_ |49.32Mb
+      - Pool_ |37.95Mb
+      - Pool_ |28.30Mb
+      - Pool_ |38.95Mb
+      - "|42.64Mb"
+      - Pool_ |35.98Mb
+      - NL_601 | 7.91Mb
+      - Pool_ |38.38Mb
+      - Pool_ |44.34Mb
+      - Pool_ |38.89Mb
+      - "|21.21Mb"
+      - Pool_ |24.42Mb
+      - Pool_ |41.65Mb
+      - CN_90 |80.25Mb
+      - US_1336 |59.07Mb
+      - Pool_ |44.02Mb
+      - Pool_ |45.04Mb
+      - Pool_ |45.81Mb
+      - Pool_ |22.40Mb
+      - CN_72 | 3.86Mb
+      - Pool_ |45.47Mb
+      - Pool_ |41.48Mb
+      - "|42.38Mb 2"
+      - "|37.57Mb"
+      - RO_635 |19.52Mb
+      - _25 |28.31Mb
+      - Pool_ |49.30Mb
+      - Pool_ |43.56Mb
+      - Pool_ |26.89Mb
+      - NL_586 |22.11Mb
+      - US_854 |15.63Mb
+      - US_1484 | 5.66Mb
+      - CA_36 | 5.28Mb
+      - HK_76 TG@peekfun
       - _HK_香港 2
-      - CN_528
       - US_747
-      - CN_522
-      - CN_46 TG@peekfun
-      - CN_73 TG@peekfun
-      - CN_98 |25.89Mb
-      - CN_532
-      - CN_535
-      - TW_152 TG@peekfun
       - CN_530
-      - TW_624
-      - TW_622
       - CN_95 | 9.00Mb
-      - _435
       - _RU_俄罗斯联邦
       - _NL_荷兰 2
-      - _NL_荷兰 3
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CA_加拿大
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_95 |23.95Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
-      - CN_65 |65.70Mb
-      - CN_534
-      - CN_238 | 8.14Mb
-      - CN_235 | 9.60Mb
-      - CN_525
-      - _TW_台湾
-      - CN_523
-      - _HK_香港
-      - _NL_荷兰
-      - CN_531
+      - Pool_ |39.91Mb
+      - Pool_ |44.98Mb
+      - Pool_ |43.65Mb
+      - Pool_ |28.02Mb
+      - Pool_ |40.12Mb
+      - NL_579 |27.57Mb
+      - "|44.30Mb"
+      - Pool_ |38.14Mb
+      - Pool_ |27.06Mb
+      - Pool_ |39.10Mb
+      - Pool_ |40.82Mb
+      - Pool_ |39.71Mb
+      - "|39.74Mb"
+      - Pool_ |29.94Mb
+      - Pool_ |21.70Mb
+      - Pool_ |42.02Mb
+      - Pool_ |43.58Mb
+      - "|44.22Mb"
+      - Pool_ |34.69Mb
+      - Pool_ |46.48Mb
+      - Pool_ |40.22Mb
+      - Pool_ |38.35Mb
+      - Pool_ |41.54Mb
+      - Pool_ |43.83Mb
+      - "|17.69Mb"
+      - Pool_ |37.41Mb
+      - Pool_ |41.50Mb
+      - Pool_ |41.40Mb
+      - "|41.17Mb"
+      - "|42.38Mb"
+      - Pool_ |24.08Mb
+      - Pool_ |31.94Mb
+      - Pool_ |39.50Mb
+      - Pool_ |41.84Mb
+      - Pool_ |43.18Mb
+      - Pool_ |34.44Mb
+      - Pool_ |33.37Mb
+      - Pool_ |77.90Mb
+      - "|40.88Mb"
+      - Pool_ |39.84Mb
+      - Pool_ |44.19Mb
+      - RO_646 |17.99Mb
+      - US_1131 |57.80Mb
+      - Pool_ |24.30Mb
+      - Pool_ |22.01Mb
+      - Pool_ |49.23Mb
+      - Pool_ |14.82Mb
+      - Pool_ |45.74Mb
+      - Pool_ |43.93Mb
+      - Pool_ |43.20Mb
+      - Pool_ |43.57Mb
+      - NL_580 |27.83Mb
+      - Pool_ |43.41Mb
+      - Pool_ |43.20Mb 2
+      - Pool_ |25.84Mb
+      - Pool_ |36.33Mb
+      - "|43.15Mb"
+      - Pool_ |42.93Mb
+      - "|15.77Mb"
+      - "|20.49Mb"
+      - Pool_ |28.64Mb
+      - Pool_ |38.35Mb 2
+      - Pool_ |36.67Mb
+      - Pool_ |43.94Mb
+      - Pool_ |38.64Mb
+      - US_1195 |40.34Mb
+      - Pool_ |26.79Mb
+      - NL_581 |27.21Mb
+      - Pool_ |35.17Mb
+      - Pool_ |40.17Mb
+      - Pool_ |45.48Mb
+      - "|34.27Mb"
+      - Pool_ |27.75Mb
+      - Pool_ |40.28Mb
+      - "|37.64Mb"
+      - "|15.53Mb"
+      - Pool_ |30.51Mb
+      - Pool_ |37.64Mb
+      - Pool_ |26.63Mb
+      - Pool_ |44.59Mb
+      - Pool_ |38.41Mb
+      - Pool_ |25.43Mb
+      - Pool_ |38.79Mb
+      - NL_587 |27.93Mb
+      - Pool_ |41.82Mb
+      - NL_577 |24.20Mb
+      - LT_449 |39.32Mb
+      - Pool_ |36.90Mb
+      - Pool_ |49.32Mb
+      - Pool_ |37.95Mb
+      - Pool_ |28.30Mb
+      - Pool_ |38.95Mb
+      - "|42.64Mb"
+      - Pool_ |35.98Mb
+      - NL_601 | 7.91Mb
+      - Pool_ |38.38Mb
+      - Pool_ |44.34Mb
+      - Pool_ |38.89Mb
+      - "|21.21Mb"
+      - Pool_ |24.42Mb
+      - Pool_ |41.65Mb
+      - CN_90 |80.25Mb
+      - US_1336 |59.07Mb
+      - Pool_ |44.02Mb
+      - Pool_ |45.04Mb
+      - Pool_ |45.81Mb
+      - Pool_ |22.40Mb
+      - CN_72 | 3.86Mb
+      - Pool_ |45.47Mb
+      - Pool_ |41.48Mb
+      - "|42.38Mb 2"
+      - "|37.57Mb"
+      - RO_635 |19.52Mb
+      - _25 |28.31Mb
+      - Pool_ |49.30Mb
+      - Pool_ |43.56Mb
+      - Pool_ |26.89Mb
+      - NL_586 |22.11Mb
+      - US_854 |15.63Mb
+      - US_1484 | 5.66Mb
+      - CA_36 | 5.28Mb
+      - HK_76 TG@peekfun
       - _HK_香港 2
-      - CN_528
       - US_747
-      - CN_522
-      - CN_46 TG@peekfun
-      - CN_73 TG@peekfun
-      - CN_98 |25.89Mb
-      - CN_532
-      - CN_535
-      - TW_152 TG@peekfun
       - CN_530
-      - TW_624
-      - TW_622
       - CN_95 | 9.00Mb
-      - _435
       - _RU_俄罗斯联邦
       - _NL_荷兰 2
-      - _NL_荷兰 3
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CA_加拿大
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_95 |23.95Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -184,48 +552,138 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
-      - CN_65 |65.70Mb
-      - CN_534
-      - CN_238 | 8.14Mb
-      - CN_235 | 9.60Mb
-      - CN_525
-      - _TW_台湾
-      - CN_523
-      - _HK_香港
-      - _NL_荷兰
-      - CN_531
+      - Pool_ |39.91Mb
+      - Pool_ |44.98Mb
+      - Pool_ |43.65Mb
+      - Pool_ |28.02Mb
+      - Pool_ |40.12Mb
+      - NL_579 |27.57Mb
+      - "|44.30Mb"
+      - Pool_ |38.14Mb
+      - Pool_ |27.06Mb
+      - Pool_ |39.10Mb
+      - Pool_ |40.82Mb
+      - Pool_ |39.71Mb
+      - "|39.74Mb"
+      - Pool_ |29.94Mb
+      - Pool_ |21.70Mb
+      - Pool_ |42.02Mb
+      - Pool_ |43.58Mb
+      - "|44.22Mb"
+      - Pool_ |34.69Mb
+      - Pool_ |46.48Mb
+      - Pool_ |40.22Mb
+      - Pool_ |38.35Mb
+      - Pool_ |41.54Mb
+      - Pool_ |43.83Mb
+      - "|17.69Mb"
+      - Pool_ |37.41Mb
+      - Pool_ |41.50Mb
+      - Pool_ |41.40Mb
+      - "|41.17Mb"
+      - "|42.38Mb"
+      - Pool_ |24.08Mb
+      - Pool_ |31.94Mb
+      - Pool_ |39.50Mb
+      - Pool_ |41.84Mb
+      - Pool_ |43.18Mb
+      - Pool_ |34.44Mb
+      - Pool_ |33.37Mb
+      - Pool_ |77.90Mb
+      - "|40.88Mb"
+      - Pool_ |39.84Mb
+      - Pool_ |44.19Mb
+      - RO_646 |17.99Mb
+      - US_1131 |57.80Mb
+      - Pool_ |24.30Mb
+      - Pool_ |22.01Mb
+      - Pool_ |49.23Mb
+      - Pool_ |14.82Mb
+      - Pool_ |45.74Mb
+      - Pool_ |43.93Mb
+      - Pool_ |43.20Mb
+      - Pool_ |43.57Mb
+      - NL_580 |27.83Mb
+      - Pool_ |43.41Mb
+      - Pool_ |43.20Mb 2
+      - Pool_ |25.84Mb
+      - Pool_ |36.33Mb
+      - "|43.15Mb"
+      - Pool_ |42.93Mb
+      - "|15.77Mb"
+      - "|20.49Mb"
+      - Pool_ |28.64Mb
+      - Pool_ |38.35Mb 2
+      - Pool_ |36.67Mb
+      - Pool_ |43.94Mb
+      - Pool_ |38.64Mb
+      - US_1195 |40.34Mb
+      - Pool_ |26.79Mb
+      - NL_581 |27.21Mb
+      - Pool_ |35.17Mb
+      - Pool_ |40.17Mb
+      - Pool_ |45.48Mb
+      - "|34.27Mb"
+      - Pool_ |27.75Mb
+      - Pool_ |40.28Mb
+      - "|37.64Mb"
+      - "|15.53Mb"
+      - Pool_ |30.51Mb
+      - Pool_ |37.64Mb
+      - Pool_ |26.63Mb
+      - Pool_ |44.59Mb
+      - Pool_ |38.41Mb
+      - Pool_ |25.43Mb
+      - Pool_ |38.79Mb
+      - NL_587 |27.93Mb
+      - Pool_ |41.82Mb
+      - NL_577 |24.20Mb
+      - LT_449 |39.32Mb
+      - Pool_ |36.90Mb
+      - Pool_ |49.32Mb
+      - Pool_ |37.95Mb
+      - Pool_ |28.30Mb
+      - Pool_ |38.95Mb
+      - "|42.64Mb"
+      - Pool_ |35.98Mb
+      - NL_601 | 7.91Mb
+      - Pool_ |38.38Mb
+      - Pool_ |44.34Mb
+      - Pool_ |38.89Mb
+      - "|21.21Mb"
+      - Pool_ |24.42Mb
+      - Pool_ |41.65Mb
+      - CN_90 |80.25Mb
+      - US_1336 |59.07Mb
+      - Pool_ |44.02Mb
+      - Pool_ |45.04Mb
+      - Pool_ |45.81Mb
+      - Pool_ |22.40Mb
+      - CN_72 | 3.86Mb
+      - Pool_ |45.47Mb
+      - Pool_ |41.48Mb
+      - "|42.38Mb 2"
+      - "|37.57Mb"
+      - RO_635 |19.52Mb
+      - _25 |28.31Mb
+      - Pool_ |49.30Mb
+      - Pool_ |43.56Mb
+      - Pool_ |26.89Mb
+      - NL_586 |22.11Mb
+      - US_854 |15.63Mb
+      - US_1484 | 5.66Mb
+      - CA_36 | 5.28Mb
+      - HK_76 TG@peekfun
       - _HK_香港 2
-      - CN_528
       - US_747
-      - CN_522
-      - CN_46 TG@peekfun
-      - CN_73 TG@peekfun
-      - CN_98 |25.89Mb
-      - CN_532
-      - CN_535
-      - TW_152 TG@peekfun
       - CN_530
-      - TW_624
-      - TW_622
       - CN_95 | 9.00Mb
-      - _435
       - _RU_俄罗斯联邦
       - _NL_荷兰 2
-      - _NL_荷兰 3
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CA_加拿大
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_95 |23.95Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _TW_台湾
-      - _HK_香港
       - _HK_香港 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
@@ -233,125 +691,401 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _US_美国
-      - CN_65 |65.70Mb
-      - CN_534
-      - CN_238 | 8.14Mb
-      - CN_235 | 9.60Mb
-      - CN_525
-      - _TW_台湾
-      - CN_523
-      - _HK_香港
-      - _NL_荷兰
-      - CN_531
+      - Pool_ |39.91Mb
+      - Pool_ |44.98Mb
+      - Pool_ |43.65Mb
+      - Pool_ |28.02Mb
+      - Pool_ |40.12Mb
+      - NL_579 |27.57Mb
+      - "|44.30Mb"
+      - Pool_ |38.14Mb
+      - Pool_ |27.06Mb
+      - Pool_ |39.10Mb
+      - Pool_ |40.82Mb
+      - Pool_ |39.71Mb
+      - "|39.74Mb"
+      - Pool_ |29.94Mb
+      - Pool_ |21.70Mb
+      - Pool_ |42.02Mb
+      - Pool_ |43.58Mb
+      - "|44.22Mb"
+      - Pool_ |34.69Mb
+      - Pool_ |46.48Mb
+      - Pool_ |40.22Mb
+      - Pool_ |38.35Mb
+      - Pool_ |41.54Mb
+      - Pool_ |43.83Mb
+      - "|17.69Mb"
+      - Pool_ |37.41Mb
+      - Pool_ |41.50Mb
+      - Pool_ |41.40Mb
+      - "|41.17Mb"
+      - "|42.38Mb"
+      - Pool_ |24.08Mb
+      - Pool_ |31.94Mb
+      - Pool_ |39.50Mb
+      - Pool_ |41.84Mb
+      - Pool_ |43.18Mb
+      - Pool_ |34.44Mb
+      - Pool_ |33.37Mb
+      - Pool_ |77.90Mb
+      - "|40.88Mb"
+      - Pool_ |39.84Mb
+      - Pool_ |44.19Mb
+      - RO_646 |17.99Mb
+      - US_1131 |57.80Mb
+      - Pool_ |24.30Mb
+      - Pool_ |22.01Mb
+      - Pool_ |49.23Mb
+      - Pool_ |14.82Mb
+      - Pool_ |45.74Mb
+      - Pool_ |43.93Mb
+      - Pool_ |43.20Mb
+      - Pool_ |43.57Mb
+      - NL_580 |27.83Mb
+      - Pool_ |43.41Mb
+      - Pool_ |43.20Mb 2
+      - Pool_ |25.84Mb
+      - Pool_ |36.33Mb
+      - "|43.15Mb"
+      - Pool_ |42.93Mb
+      - "|15.77Mb"
+      - "|20.49Mb"
+      - Pool_ |28.64Mb
+      - Pool_ |38.35Mb 2
+      - Pool_ |36.67Mb
+      - Pool_ |43.94Mb
+      - Pool_ |38.64Mb
+      - US_1195 |40.34Mb
+      - Pool_ |26.79Mb
+      - NL_581 |27.21Mb
+      - Pool_ |35.17Mb
+      - Pool_ |40.17Mb
+      - Pool_ |45.48Mb
+      - "|34.27Mb"
+      - Pool_ |27.75Mb
+      - Pool_ |40.28Mb
+      - "|37.64Mb"
+      - "|15.53Mb"
+      - Pool_ |30.51Mb
+      - Pool_ |37.64Mb
+      - Pool_ |26.63Mb
+      - Pool_ |44.59Mb
+      - Pool_ |38.41Mb
+      - Pool_ |25.43Mb
+      - Pool_ |38.79Mb
+      - NL_587 |27.93Mb
+      - Pool_ |41.82Mb
+      - NL_577 |24.20Mb
+      - LT_449 |39.32Mb
+      - Pool_ |36.90Mb
+      - Pool_ |49.32Mb
+      - Pool_ |37.95Mb
+      - Pool_ |28.30Mb
+      - Pool_ |38.95Mb
+      - "|42.64Mb"
+      - Pool_ |35.98Mb
+      - NL_601 | 7.91Mb
+      - Pool_ |38.38Mb
+      - Pool_ |44.34Mb
+      - Pool_ |38.89Mb
+      - "|21.21Mb"
+      - Pool_ |24.42Mb
+      - Pool_ |41.65Mb
+      - CN_90 |80.25Mb
+      - US_1336 |59.07Mb
+      - Pool_ |44.02Mb
+      - Pool_ |45.04Mb
+      - Pool_ |45.81Mb
+      - Pool_ |22.40Mb
+      - CN_72 | 3.86Mb
+      - Pool_ |45.47Mb
+      - Pool_ |41.48Mb
+      - "|42.38Mb 2"
+      - "|37.57Mb"
+      - RO_635 |19.52Mb
+      - _25 |28.31Mb
+      - Pool_ |49.30Mb
+      - Pool_ |43.56Mb
+      - Pool_ |26.89Mb
+      - NL_586 |22.11Mb
+      - US_854 |15.63Mb
+      - US_1484 | 5.66Mb
+      - CA_36 | 5.28Mb
+      - HK_76 TG@peekfun
       - _HK_香港 2
-      - CN_528
       - US_747
-      - CN_522
-      - CN_46 TG@peekfun
-      - CN_73 TG@peekfun
-      - CN_98 |25.89Mb
-      - CN_532
-      - CN_535
-      - TW_152 TG@peekfun
       - CN_530
-      - TW_624
-      - TW_622
       - CN_95 | 9.00Mb
-      - _435
       - _RU_俄罗斯联邦
       - _NL_荷兰 2
-      - _NL_荷兰 3
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CA_加拿大
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_95 |23.95Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _US_美国
-      - CN_65 |65.70Mb
-      - CN_534
-      - CN_238 | 8.14Mb
-      - CN_235 | 9.60Mb
-      - CN_525
-      - _TW_台湾
-      - CN_523
-      - _HK_香港
-      - _NL_荷兰
-      - CN_531
+      - Pool_ |39.91Mb
+      - Pool_ |44.98Mb
+      - Pool_ |43.65Mb
+      - Pool_ |28.02Mb
+      - Pool_ |40.12Mb
+      - NL_579 |27.57Mb
+      - "|44.30Mb"
+      - Pool_ |38.14Mb
+      - Pool_ |27.06Mb
+      - Pool_ |39.10Mb
+      - Pool_ |40.82Mb
+      - Pool_ |39.71Mb
+      - "|39.74Mb"
+      - Pool_ |29.94Mb
+      - Pool_ |21.70Mb
+      - Pool_ |42.02Mb
+      - Pool_ |43.58Mb
+      - "|44.22Mb"
+      - Pool_ |34.69Mb
+      - Pool_ |46.48Mb
+      - Pool_ |40.22Mb
+      - Pool_ |38.35Mb
+      - Pool_ |41.54Mb
+      - Pool_ |43.83Mb
+      - "|17.69Mb"
+      - Pool_ |37.41Mb
+      - Pool_ |41.50Mb
+      - Pool_ |41.40Mb
+      - "|41.17Mb"
+      - "|42.38Mb"
+      - Pool_ |24.08Mb
+      - Pool_ |31.94Mb
+      - Pool_ |39.50Mb
+      - Pool_ |41.84Mb
+      - Pool_ |43.18Mb
+      - Pool_ |34.44Mb
+      - Pool_ |33.37Mb
+      - Pool_ |77.90Mb
+      - "|40.88Mb"
+      - Pool_ |39.84Mb
+      - Pool_ |44.19Mb
+      - RO_646 |17.99Mb
+      - US_1131 |57.80Mb
+      - Pool_ |24.30Mb
+      - Pool_ |22.01Mb
+      - Pool_ |49.23Mb
+      - Pool_ |14.82Mb
+      - Pool_ |45.74Mb
+      - Pool_ |43.93Mb
+      - Pool_ |43.20Mb
+      - Pool_ |43.57Mb
+      - NL_580 |27.83Mb
+      - Pool_ |43.41Mb
+      - Pool_ |43.20Mb 2
+      - Pool_ |25.84Mb
+      - Pool_ |36.33Mb
+      - "|43.15Mb"
+      - Pool_ |42.93Mb
+      - "|15.77Mb"
+      - "|20.49Mb"
+      - Pool_ |28.64Mb
+      - Pool_ |38.35Mb 2
+      - Pool_ |36.67Mb
+      - Pool_ |43.94Mb
+      - Pool_ |38.64Mb
+      - US_1195 |40.34Mb
+      - Pool_ |26.79Mb
+      - NL_581 |27.21Mb
+      - Pool_ |35.17Mb
+      - Pool_ |40.17Mb
+      - Pool_ |45.48Mb
+      - "|34.27Mb"
+      - Pool_ |27.75Mb
+      - Pool_ |40.28Mb
+      - "|37.64Mb"
+      - "|15.53Mb"
+      - Pool_ |30.51Mb
+      - Pool_ |37.64Mb
+      - Pool_ |26.63Mb
+      - Pool_ |44.59Mb
+      - Pool_ |38.41Mb
+      - Pool_ |25.43Mb
+      - Pool_ |38.79Mb
+      - NL_587 |27.93Mb
+      - Pool_ |41.82Mb
+      - NL_577 |24.20Mb
+      - LT_449 |39.32Mb
+      - Pool_ |36.90Mb
+      - Pool_ |49.32Mb
+      - Pool_ |37.95Mb
+      - Pool_ |28.30Mb
+      - Pool_ |38.95Mb
+      - "|42.64Mb"
+      - Pool_ |35.98Mb
+      - NL_601 | 7.91Mb
+      - Pool_ |38.38Mb
+      - Pool_ |44.34Mb
+      - Pool_ |38.89Mb
+      - "|21.21Mb"
+      - Pool_ |24.42Mb
+      - Pool_ |41.65Mb
+      - CN_90 |80.25Mb
+      - US_1336 |59.07Mb
+      - Pool_ |44.02Mb
+      - Pool_ |45.04Mb
+      - Pool_ |45.81Mb
+      - Pool_ |22.40Mb
+      - CN_72 | 3.86Mb
+      - Pool_ |45.47Mb
+      - Pool_ |41.48Mb
+      - "|42.38Mb 2"
+      - "|37.57Mb"
+      - RO_635 |19.52Mb
+      - _25 |28.31Mb
+      - Pool_ |49.30Mb
+      - Pool_ |43.56Mb
+      - Pool_ |26.89Mb
+      - NL_586 |22.11Mb
+      - US_854 |15.63Mb
+      - US_1484 | 5.66Mb
+      - CA_36 | 5.28Mb
+      - HK_76 TG@peekfun
       - _HK_香港 2
-      - CN_528
       - US_747
-      - CN_522
-      - CN_46 TG@peekfun
-      - CN_73 TG@peekfun
-      - CN_98 |25.89Mb
-      - CN_532
-      - CN_535
-      - TW_152 TG@peekfun
       - CN_530
-      - TW_624
-      - TW_622
       - CN_95 | 9.00Mb
-      - _435
       - _RU_俄罗斯联邦
       - _NL_荷兰 2
-      - _NL_荷兰 3
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CA_加拿大
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_95 |23.95Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_美国
-      - CN_65 |65.70Mb
-      - CN_534
-      - CN_238 | 8.14Mb
-      - CN_235 | 9.60Mb
-      - CN_525
-      - _TW_台湾
-      - CN_523
-      - _HK_香港
-      - _NL_荷兰
-      - CN_531
+      - Pool_ |39.91Mb
+      - Pool_ |44.98Mb
+      - Pool_ |43.65Mb
+      - Pool_ |28.02Mb
+      - Pool_ |40.12Mb
+      - NL_579 |27.57Mb
+      - "|44.30Mb"
+      - Pool_ |38.14Mb
+      - Pool_ |27.06Mb
+      - Pool_ |39.10Mb
+      - Pool_ |40.82Mb
+      - Pool_ |39.71Mb
+      - "|39.74Mb"
+      - Pool_ |29.94Mb
+      - Pool_ |21.70Mb
+      - Pool_ |42.02Mb
+      - Pool_ |43.58Mb
+      - "|44.22Mb"
+      - Pool_ |34.69Mb
+      - Pool_ |46.48Mb
+      - Pool_ |40.22Mb
+      - Pool_ |38.35Mb
+      - Pool_ |41.54Mb
+      - Pool_ |43.83Mb
+      - "|17.69Mb"
+      - Pool_ |37.41Mb
+      - Pool_ |41.50Mb
+      - Pool_ |41.40Mb
+      - "|41.17Mb"
+      - "|42.38Mb"
+      - Pool_ |24.08Mb
+      - Pool_ |31.94Mb
+      - Pool_ |39.50Mb
+      - Pool_ |41.84Mb
+      - Pool_ |43.18Mb
+      - Pool_ |34.44Mb
+      - Pool_ |33.37Mb
+      - Pool_ |77.90Mb
+      - "|40.88Mb"
+      - Pool_ |39.84Mb
+      - Pool_ |44.19Mb
+      - RO_646 |17.99Mb
+      - US_1131 |57.80Mb
+      - Pool_ |24.30Mb
+      - Pool_ |22.01Mb
+      - Pool_ |49.23Mb
+      - Pool_ |14.82Mb
+      - Pool_ |45.74Mb
+      - Pool_ |43.93Mb
+      - Pool_ |43.20Mb
+      - Pool_ |43.57Mb
+      - NL_580 |27.83Mb
+      - Pool_ |43.41Mb
+      - Pool_ |43.20Mb 2
+      - Pool_ |25.84Mb
+      - Pool_ |36.33Mb
+      - "|43.15Mb"
+      - Pool_ |42.93Mb
+      - "|15.77Mb"
+      - "|20.49Mb"
+      - Pool_ |28.64Mb
+      - Pool_ |38.35Mb 2
+      - Pool_ |36.67Mb
+      - Pool_ |43.94Mb
+      - Pool_ |38.64Mb
+      - US_1195 |40.34Mb
+      - Pool_ |26.79Mb
+      - NL_581 |27.21Mb
+      - Pool_ |35.17Mb
+      - Pool_ |40.17Mb
+      - Pool_ |45.48Mb
+      - "|34.27Mb"
+      - Pool_ |27.75Mb
+      - Pool_ |40.28Mb
+      - "|37.64Mb"
+      - "|15.53Mb"
+      - Pool_ |30.51Mb
+      - Pool_ |37.64Mb
+      - Pool_ |26.63Mb
+      - Pool_ |44.59Mb
+      - Pool_ |38.41Mb
+      - Pool_ |25.43Mb
+      - Pool_ |38.79Mb
+      - NL_587 |27.93Mb
+      - Pool_ |41.82Mb
+      - NL_577 |24.20Mb
+      - LT_449 |39.32Mb
+      - Pool_ |36.90Mb
+      - Pool_ |49.32Mb
+      - Pool_ |37.95Mb
+      - Pool_ |28.30Mb
+      - Pool_ |38.95Mb
+      - "|42.64Mb"
+      - Pool_ |35.98Mb
+      - NL_601 | 7.91Mb
+      - Pool_ |38.38Mb
+      - Pool_ |44.34Mb
+      - Pool_ |38.89Mb
+      - "|21.21Mb"
+      - Pool_ |24.42Mb
+      - Pool_ |41.65Mb
+      - CN_90 |80.25Mb
+      - US_1336 |59.07Mb
+      - Pool_ |44.02Mb
+      - Pool_ |45.04Mb
+      - Pool_ |45.81Mb
+      - Pool_ |22.40Mb
+      - CN_72 | 3.86Mb
+      - Pool_ |45.47Mb
+      - Pool_ |41.48Mb
+      - "|42.38Mb 2"
+      - "|37.57Mb"
+      - RO_635 |19.52Mb
+      - _25 |28.31Mb
+      - Pool_ |49.30Mb
+      - Pool_ |43.56Mb
+      - Pool_ |26.89Mb
+      - NL_586 |22.11Mb
+      - US_854 |15.63Mb
+      - US_1484 | 5.66Mb
+      - CA_36 | 5.28Mb
+      - HK_76 TG@peekfun
       - _HK_香港 2
-      - CN_528
       - US_747
-      - CN_522
-      - CN_46 TG@peekfun
-      - CN_73 TG@peekfun
-      - CN_98 |25.89Mb
-      - CN_532
-      - CN_535
-      - TW_152 TG@peekfun
       - CN_530
-      - TW_624
-      - TW_622
       - CN_95 | 9.00Mb
-      - _435
       - _RU_俄罗斯联邦
       - _NL_荷兰 2
-      - _NL_荷兰 3
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CA_加拿大
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_95 |23.95Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -367,42 +1101,134 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_美国
-      - CN_65 |65.70Mb
-      - CN_534
-      - CN_238 | 8.14Mb
-      - CN_235 | 9.60Mb
-      - CN_525
-      - _TW_台湾
-      - CN_523
-      - _HK_香港
-      - _NL_荷兰
-      - CN_531
+      - Pool_ |39.91Mb
+      - Pool_ |44.98Mb
+      - Pool_ |43.65Mb
+      - Pool_ |28.02Mb
+      - Pool_ |40.12Mb
+      - NL_579 |27.57Mb
+      - "|44.30Mb"
+      - Pool_ |38.14Mb
+      - Pool_ |27.06Mb
+      - Pool_ |39.10Mb
+      - Pool_ |40.82Mb
+      - Pool_ |39.71Mb
+      - "|39.74Mb"
+      - Pool_ |29.94Mb
+      - Pool_ |21.70Mb
+      - Pool_ |42.02Mb
+      - Pool_ |43.58Mb
+      - "|44.22Mb"
+      - Pool_ |34.69Mb
+      - Pool_ |46.48Mb
+      - Pool_ |40.22Mb
+      - Pool_ |38.35Mb
+      - Pool_ |41.54Mb
+      - Pool_ |43.83Mb
+      - "|17.69Mb"
+      - Pool_ |37.41Mb
+      - Pool_ |41.50Mb
+      - Pool_ |41.40Mb
+      - "|41.17Mb"
+      - "|42.38Mb"
+      - Pool_ |24.08Mb
+      - Pool_ |31.94Mb
+      - Pool_ |39.50Mb
+      - Pool_ |41.84Mb
+      - Pool_ |43.18Mb
+      - Pool_ |34.44Mb
+      - Pool_ |33.37Mb
+      - Pool_ |77.90Mb
+      - "|40.88Mb"
+      - Pool_ |39.84Mb
+      - Pool_ |44.19Mb
+      - RO_646 |17.99Mb
+      - US_1131 |57.80Mb
+      - Pool_ |24.30Mb
+      - Pool_ |22.01Mb
+      - Pool_ |49.23Mb
+      - Pool_ |14.82Mb
+      - Pool_ |45.74Mb
+      - Pool_ |43.93Mb
+      - Pool_ |43.20Mb
+      - Pool_ |43.57Mb
+      - NL_580 |27.83Mb
+      - Pool_ |43.41Mb
+      - Pool_ |43.20Mb 2
+      - Pool_ |25.84Mb
+      - Pool_ |36.33Mb
+      - "|43.15Mb"
+      - Pool_ |42.93Mb
+      - "|15.77Mb"
+      - "|20.49Mb"
+      - Pool_ |28.64Mb
+      - Pool_ |38.35Mb 2
+      - Pool_ |36.67Mb
+      - Pool_ |43.94Mb
+      - Pool_ |38.64Mb
+      - US_1195 |40.34Mb
+      - Pool_ |26.79Mb
+      - NL_581 |27.21Mb
+      - Pool_ |35.17Mb
+      - Pool_ |40.17Mb
+      - Pool_ |45.48Mb
+      - "|34.27Mb"
+      - Pool_ |27.75Mb
+      - Pool_ |40.28Mb
+      - "|37.64Mb"
+      - "|15.53Mb"
+      - Pool_ |30.51Mb
+      - Pool_ |37.64Mb
+      - Pool_ |26.63Mb
+      - Pool_ |44.59Mb
+      - Pool_ |38.41Mb
+      - Pool_ |25.43Mb
+      - Pool_ |38.79Mb
+      - NL_587 |27.93Mb
+      - Pool_ |41.82Mb
+      - NL_577 |24.20Mb
+      - LT_449 |39.32Mb
+      - Pool_ |36.90Mb
+      - Pool_ |49.32Mb
+      - Pool_ |37.95Mb
+      - Pool_ |28.30Mb
+      - Pool_ |38.95Mb
+      - "|42.64Mb"
+      - Pool_ |35.98Mb
+      - NL_601 | 7.91Mb
+      - Pool_ |38.38Mb
+      - Pool_ |44.34Mb
+      - Pool_ |38.89Mb
+      - "|21.21Mb"
+      - Pool_ |24.42Mb
+      - Pool_ |41.65Mb
+      - CN_90 |80.25Mb
+      - US_1336 |59.07Mb
+      - Pool_ |44.02Mb
+      - Pool_ |45.04Mb
+      - Pool_ |45.81Mb
+      - Pool_ |22.40Mb
+      - CN_72 | 3.86Mb
+      - Pool_ |45.47Mb
+      - Pool_ |41.48Mb
+      - "|42.38Mb 2"
+      - "|37.57Mb"
+      - RO_635 |19.52Mb
+      - _25 |28.31Mb
+      - Pool_ |49.30Mb
+      - Pool_ |43.56Mb
+      - Pool_ |26.89Mb
+      - NL_586 |22.11Mb
+      - US_854 |15.63Mb
+      - US_1484 | 5.66Mb
+      - CA_36 | 5.28Mb
+      - HK_76 TG@peekfun
       - _HK_香港 2
-      - CN_528
       - US_747
-      - CN_522
-      - CN_46 TG@peekfun
-      - CN_73 TG@peekfun
-      - CN_98 |25.89Mb
-      - CN_532
-      - CN_535
-      - TW_152 TG@peekfun
       - CN_530
-      - TW_624
-      - TW_622
       - CN_95 | 9.00Mb
-      - _435
       - _RU_俄罗斯联邦
       - _NL_荷兰 2
-      - _NL_荷兰 3
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CA_加拿大
-      - CN_103 |22.63Mb
-      - CN_533
-      - CN_536
-      - CN_66 |25.05Mb
-      - CN_95 |23.95Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
