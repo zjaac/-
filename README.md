@@ -5,99 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_88 TG@peekfun, server: 120.233.186.250, port: 3384, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_118 |222.86Mb, server: 120.233.186.71, port: 3384, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_99 |15.00Mb, server: hn.zfnode.org, port: 30217, type: trojan, password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f, sni: hn.zfnode.org, skip-cert-verify: true, udp: true}
-  - {name: CN_264 | 9.97Mb, server: 116.129.253.134, port: 3384, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_263 | 9.40Mb, server: 116.129.253.134, port: 3384, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_257 | 9.51Mb, server: 116.129.253.134, port: 3384, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_241 |12.50Mb, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_48 |27.47Mb, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_68 |11.54Mb, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: CN_58 |30.38Mb, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_60 |13.37Mb, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_252 |11.79Mb, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_61 |74.50Mb, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_45 |60.94Mb, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_35 |69.74Mb, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_78 TG@peekfun, server: 120.233.186.250, port: 3384, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_92 TG@peekfun, server: 120.233.186.250, port: 3384, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_120 |145.90Mb, server: 120.233.186.71, port: 3384, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_117 |208.77Mb, server: 120.233.186.71, port: 3384, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: xn1.zjaac.tk_trojan_gRPC, server: xn1p4.zjaac.tk, port: 443, type: trojan, password: 6f8b2dec-7316-4fa9-bb1b-35f0b5feae2b, sni: xn1p4.zjaac.tk, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_88 TG@peekfun
-      - CN_118 |222.86Mb
-      - CN_99 |15.00Mb
-      - CN_264 | 9.97Mb
-      - CN_263 | 9.40Mb
-      - CN_257 | 9.51Mb
-      - CN_241 |12.50Mb
-      - CN_48 |27.47Mb
-      - Relay_🇨🇳CN-🇹🇼TW_68 |11.54Mb
-      - CN_58 |30.38Mb
-      - CN_60 |13.37Mb
-      - CN_252 |11.79Mb
-      - CN_61 |74.50Mb
-      - CN_45 |60.94Mb
-      - CN_35 |69.74Mb
-      - CN_78 TG@peekfun
-      - CN_92 TG@peekfun
-      - CN_120 |145.90Mb
-      - CN_117 |208.77Mb
+      - xn1.zjaac.tk_trojan_gRPC
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_88 TG@peekfun
-      - CN_118 |222.86Mb
-      - CN_99 |15.00Mb
-      - CN_264 | 9.97Mb
-      - CN_263 | 9.40Mb
-      - CN_257 | 9.51Mb
-      - CN_241 |12.50Mb
-      - CN_48 |27.47Mb
-      - Relay_🇨🇳CN-🇹🇼TW_68 |11.54Mb
-      - CN_58 |30.38Mb
-      - CN_60 |13.37Mb
-      - CN_252 |11.79Mb
-      - CN_61 |74.50Mb
-      - CN_45 |60.94Mb
-      - CN_35 |69.74Mb
-      - CN_78 TG@peekfun
-      - CN_92 TG@peekfun
-      - CN_120 |145.90Mb
-      - CN_117 |208.77Mb
+      - xn1.zjaac.tk_trojan_gRPC
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_88 TG@peekfun
-      - CN_118 |222.86Mb
-      - CN_99 |15.00Mb
-      - CN_264 | 9.97Mb
-      - CN_263 | 9.40Mb
-      - CN_257 | 9.51Mb
-      - CN_241 |12.50Mb
-      - CN_48 |27.47Mb
-      - Relay_🇨🇳CN-🇹🇼TW_68 |11.54Mb
-      - CN_58 |30.38Mb
-      - CN_60 |13.37Mb
-      - CN_252 |11.79Mb
-      - CN_61 |74.50Mb
-      - CN_45 |60.94Mb
-      - CN_35 |69.74Mb
-      - CN_78 TG@peekfun
-      - CN_92 TG@peekfun
-      - CN_120 |145.90Mb
-      - CN_117 |208.77Mb
+      - xn1.zjaac.tk_trojan_gRPC
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -116,25 +44,7 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_88 TG@peekfun
-      - CN_118 |222.86Mb
-      - CN_99 |15.00Mb
-      - CN_264 | 9.97Mb
-      - CN_263 | 9.40Mb
-      - CN_257 | 9.51Mb
-      - CN_241 |12.50Mb
-      - CN_48 |27.47Mb
-      - Relay_🇨🇳CN-🇹🇼TW_68 |11.54Mb
-      - CN_58 |30.38Mb
-      - CN_60 |13.37Mb
-      - CN_252 |11.79Mb
-      - CN_61 |74.50Mb
-      - CN_45 |60.94Mb
-      - CN_35 |69.74Mb
-      - CN_78 TG@peekfun
-      - CN_92 TG@peekfun
-      - CN_120 |145.90Mb
-      - CN_117 |208.77Mb
+      - xn1.zjaac.tk_trojan_gRPC
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -145,74 +55,20 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_88 TG@peekfun
-      - CN_118 |222.86Mb
-      - CN_99 |15.00Mb
-      - CN_264 | 9.97Mb
-      - CN_263 | 9.40Mb
-      - CN_257 | 9.51Mb
-      - CN_241 |12.50Mb
-      - CN_48 |27.47Mb
-      - Relay_🇨🇳CN-🇹🇼TW_68 |11.54Mb
-      - CN_58 |30.38Mb
-      - CN_60 |13.37Mb
-      - CN_252 |11.79Mb
-      - CN_61 |74.50Mb
-      - CN_45 |60.94Mb
-      - CN_35 |69.74Mb
-      - CN_78 TG@peekfun
-      - CN_92 TG@peekfun
-      - CN_120 |145.90Mb
-      - CN_117 |208.77Mb
+      - xn1.zjaac.tk_trojan_gRPC
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_88 TG@peekfun
-      - CN_118 |222.86Mb
-      - CN_99 |15.00Mb
-      - CN_264 | 9.97Mb
-      - CN_263 | 9.40Mb
-      - CN_257 | 9.51Mb
-      - CN_241 |12.50Mb
-      - CN_48 |27.47Mb
-      - Relay_🇨🇳CN-🇹🇼TW_68 |11.54Mb
-      - CN_58 |30.38Mb
-      - CN_60 |13.37Mb
-      - CN_252 |11.79Mb
-      - CN_61 |74.50Mb
-      - CN_45 |60.94Mb
-      - CN_35 |69.74Mb
-      - CN_78 TG@peekfun
-      - CN_92 TG@peekfun
-      - CN_120 |145.90Mb
-      - CN_117 |208.77Mb
+      - xn1.zjaac.tk_trojan_gRPC
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_88 TG@peekfun
-      - CN_118 |222.86Mb
-      - CN_99 |15.00Mb
-      - CN_264 | 9.97Mb
-      - CN_263 | 9.40Mb
-      - CN_257 | 9.51Mb
-      - CN_241 |12.50Mb
-      - CN_48 |27.47Mb
-      - Relay_🇨🇳CN-🇹🇼TW_68 |11.54Mb
-      - CN_58 |30.38Mb
-      - CN_60 |13.37Mb
-      - CN_252 |11.79Mb
-      - CN_61 |74.50Mb
-      - CN_45 |60.94Mb
-      - CN_35 |69.74Mb
-      - CN_78 TG@peekfun
-      - CN_92 TG@peekfun
-      - CN_120 |145.90Mb
-      - CN_117 |208.77Mb
+      - xn1.zjaac.tk_trojan_gRPC
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -228,25 +84,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_88 TG@peekfun
-      - CN_118 |222.86Mb
-      - CN_99 |15.00Mb
-      - CN_264 | 9.97Mb
-      - CN_263 | 9.40Mb
-      - CN_257 | 9.51Mb
-      - CN_241 |12.50Mb
-      - CN_48 |27.47Mb
-      - Relay_🇨🇳CN-🇹🇼TW_68 |11.54Mb
-      - CN_58 |30.38Mb
-      - CN_60 |13.37Mb
-      - CN_252 |11.79Mb
-      - CN_61 |74.50Mb
-      - CN_45 |60.94Mb
-      - CN_35 |69.74Mb
-      - CN_78 TG@peekfun
-      - CN_92 TG@peekfun
-      - CN_120 |145.90Mb
-      - CN_117 |208.77Mb
+      - xn1.zjaac.tk_trojan_gRPC
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
